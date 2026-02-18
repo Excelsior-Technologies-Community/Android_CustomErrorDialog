@@ -56,8 +56,8 @@ dependencyResolutionManagement {
 ```
 ### Add Dependency
 ```
-dependencies {
-	        implementation 'com.github.Excelsior-Technologies-Community:Android_DashLinePainter:1.0.0'
+	dependencies {
+	        implementation 'com.github.Excelsior-Technologies-Community:Android_CustomErrorDialog:Tag'
 	}
 ```
 
