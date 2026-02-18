@@ -5,7 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.ext.error_dialog.ErrorDialog
+import com.ext.error_dialog.CustomDialog
+import com.ext.error_dialog.DialogType
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,10 +18,14 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        ErrorDialog(this).show(
-            title = "Network Error",
-            message = "Please check your internet connection!",
-            buttonText = "Retry"
-        )
+        CustomDialog.Builder(this)
+            .setType(DialogType.SUCCESS)
+            .setTitle("Success!")
+            .setMessage("Payment Completed Successfully")
+            .setButtonColor(R.color.white)
+            .setCancelable(true)
+            .show()
+
+
     }
 }
