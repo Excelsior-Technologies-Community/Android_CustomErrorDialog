@@ -20,12 +20,11 @@ class MainActivity : AppCompatActivity() {
         }
         CustomDialog.Builder(this)
             .setType(DialogType.SUCCESS)
-            .setTitle("Success!")
-            .setMessage("Payment Completed Successfully")
-            .setButtonColor(R.color.white)
-            .setCancelable(true)
+            .setTitle("Done!")
+            .setDialogBackgroundColor(R.color.white)
+            .setMessage("Saved successfully")
+            .setPositiveButton("Okay")
+            .setNegativeButton("Cancel")
             .show()
-
-
     }
 }
