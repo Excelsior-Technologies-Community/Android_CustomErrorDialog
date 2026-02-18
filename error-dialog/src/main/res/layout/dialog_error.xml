@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- Error Icon -->
+    <ImageView
+        android:id="@+id/errorIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_dialog_alert" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/errorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Error!"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Something went wrong."
+        android:textSize="16sp" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="OK" />
+
+</LinearLayout>
